@@ -1,0 +1,28 @@
+h1 Add IVR Node 
+div.container
+	form.form-horizontal(name='addNodeForm')
+		div.control-group
+			label.control-label(for='nodeID') Node ID
+			div.controls
+				input#nodeID.form-control(type='text', ng-model='node.nodeID')
+		div.control-group
+			label.control-label(for='nodeName') Node name
+			div.controls
+				input#ivrNodeName.form-control(type='text', ng-model='node.ivrNodeName')
+		div.control-group
+			label.control-label(for='nodeLevel') Level
+			div.controls
+				input#nodeLevel.form-control(type='text', ng-model='node.level')
+		div.control-group
+			div(ng-repeat='x in edges')
+				span from 
+				input(ng-model='x.from')
+				span to 
+				input(ng-model='x.to')
+				span label 
+				input(ng-model='x.label')
+		div.control-group
+			button.btn(ng-click='save()') Save
+			button.btn(ng-click='cancel()') Cancel
+			button.btn(ng-click='addEdge()') Add Edge
+			

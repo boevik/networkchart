@@ -1,0 +1,24 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/vis/4.11.0/vis.min.js')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/vis/4.11.0/vis.min.css')		
+		//link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+		script(src='https://code.jquery.com/jquery-2.1.4.min.js')
+		//script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css') 
+		link(rel='stylesheet', href='/stylesheets/bootstrap-theme.min.css')
+		script(src='/vendors/angular/angular.min.js')
+		script(src='/vendors/angular/angular-route.min.js')
+		script(src='/vendors/angular-ui/ui-bootstrap-tpls-0.12.1.min.js')
+		script(src='/app.js')
+		script(src='/scripts/controllers/controller.js')
+		script(src='/scripts/controllers/addNode.js')
+		script(src='/scripts/services/ivrNodes.js')
+		script(src='/scripts/vis.js')
+    
+	body
+		div(ng-app='MyAngularApp')
+			div(ng-view)		
